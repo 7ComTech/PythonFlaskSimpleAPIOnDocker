@@ -5,11 +5,14 @@
 <br/>
 
 # Python Flask Simple API on Docker
+This repo contains:
+ - A python Flask simple API (/app) (/src)
+ - A Dockerfile for running a Python application Image
+
 This project is a Simple API using Python Flask for Docker containerization. It might be tested for GET, POST, PUT, PATCH and DELETE requests.
 
-You might notice we have non used directories within, it is a folders structure of our product, the SCA. A Python API builder that generates a full CRUD API with swagger definitions to map any relational database with a complete and secure AWS infrastructure. It has several infras for serving many needs with customized resources as cognito, waf, redis or memcached and cloudwatch or centralized logs.
-
-For more information, visit our page: [SevenTechnologies](https://seventechnologies.cloud/)
+You might notice we have non used directories within, it is a folders structure based on our product SCA: An API builder that generates a full CRUD API with swagger definitions to map any relational database with a complete and secure AWS infrastructure. We're able to provide your project with several infrastrucutures with all the features contained within this project and other customizable resources such as: Cognito for Authentication/Authorization, WAF (Web Application Firewalls), ElastiCache (Redis or Memcached) for low latency applications and full logging capabilities powered by Cloudwatch or Centralized Logs features (S3 + Glue + Athena).
+For more information, visit our page and send us an inquiry: [SevenTechnologies](https://seventechnologies.cloud/)
 
 
 The steps needed to run this docker container will be explained below
@@ -20,13 +23,13 @@ The steps needed to run this docker container will be explained below
 * Have docker installed on machine
 
 ### Building the image
-For both cases, running local or deploying, you first need to build the docker image with the following command:
+For running it locally you first need to build the docker image with the following command:
 * docker build -t ${DOCKER_IMAGE_NAME} .
 
 ## 2 - Running it locally
 
 ### Docker Run:
-The following two commands must be executed in order to test the docker app locally:
+The following command must be executed in order to test the docker app locally:
 * docker run -p "3000:3000" ${DOCKER_IMAGE_NAME}
 
 ## 3 - Additional information about Docker
